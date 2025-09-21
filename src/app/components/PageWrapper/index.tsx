@@ -29,6 +29,8 @@ export default function PageWrapper({
 }>) {
   const { theme, setTheme } = useTheme();
 
+  console.log(theme); // starting as undefined before going to dark || light
+
   return (
     <div className="min-h-screen flex flex-col">
       <NavigationMenu className="right-5 left-5">
@@ -129,9 +131,15 @@ export default function PageWrapper({
             <NavigationMenuItem className="mr-5">
               <Button
                 variant="outline"
-                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                onClick={() =>
+                  setTheme((theme || "dark") === "light" ? "dark" : "light")
+                }
               >
-                {theme === "light" ? <Moon size={36} /> : <Sun size={36} />}
+                {(theme || "dark") === "light" ? (
+                  <Moon size={36} />
+                ) : (
+                  <Sun size={36} />
+                )}
               </Button>
             </NavigationMenuItem>
             <NavigationMenuItem>
