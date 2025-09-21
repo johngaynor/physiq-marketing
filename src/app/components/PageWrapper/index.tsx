@@ -6,22 +6,21 @@ import {
   ClipboardList,
   SquareUser,
 } from "lucide-react";
-// import { Button as ShadcnButton } from "@/components/ui";
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  // NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  ListItem,
+  // NavigationMenuTrigger,
+  // ListItem,
 } from "@/components/ui/navigation-menu";
-import {
-  TrainingItems,
-  LibraryItems,
-  HealthItems,
-  ReportItems,
-  AIItems,
-} from "./NavItems";
+// import {
+//   TrainingItems,
+//   LibraryItems,
+//   HealthItems,
+//   ReportItems,
+//   AIItems,
+// } from "./NavItems";
 import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 import Link from "next/link";
@@ -34,8 +33,6 @@ export default function PageWrapper({
   children: React.ReactNode;
 }>) {
   const { theme, setTheme } = useTheme();
-
-  console.log(theme); // starting as undefined before going to dark || light
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -52,7 +49,7 @@ export default function PageWrapper({
                 />
               </Link>
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <NavigationMenuTrigger>Training</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
@@ -131,7 +128,7 @@ export default function PageWrapper({
                   ))}
                 </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
           </div>
           <div className="flex items-center gap-2">
             <NavigationMenuItem>
