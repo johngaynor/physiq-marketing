@@ -4,98 +4,60 @@ type ListItem = {
   description: string;
 };
 
-export const TrainingItems: ListItem[] = [
+export const AthleteItems: ListItem[] = [
   {
-    title: "Workout Log",
-    href: "/",
-    description: "Log your workouts.",
-  },
-  {
-    title: "Workout History",
-    href: "/",
-    description: "View your training history.",
-  },
-  {
-    title: "Workout Builder",
-    href: "/",
-    description: "Build templates for training blocks and sessions.",
-  },
-  {
-    title: "Exercise Database",
-    href: "/",
-    description: "Create and manage exercises for your workouts.",
-  },
-];
-
-export const LibraryItems: ListItem[] = [
-  {
-    title: "Bodybuilder Case Studies",
-    href: "/",
+    title: "Physical Health (coming soon)",
+    href: "/athletes/health",
     description:
-      "Study the methodologies of the world's most renowned bodybuilders.",
+      "Monitor health metrics to identify insights on your physical performance.",
+  },
+  {
+    title: "Training (coming soon)",
+    href: "/athletes/training",
+    description: "Plan and log workouts to track your performance over time.",
+  },
+  {
+    title: "Nutrition (coming soon)",
+    href: "/athletes/nutrition",
+    description:
+      "Configure diet plans and set objectives for nutrition phases.",
+  },
+  {
+    title: "Recovery (coming soon)",
+    href: "/athletes/recovery",
+    description: "Track recovery statistics to optimize your performance.",
+  },
+  {
+    title: "Mental Health (coming soon)",
+    href: "/athletes/mental",
+    description: "Record your thoughts and feelings through journaling.",
+  },
+  {
+    title: "Knowledge Center (coming soon)",
+    href: "/athletes/knowledge",
+    description: "Access a wealth of information from top competitors.",
   },
 ];
 
-export const ReportItems: ListItem[] = [
+export const CoachItems: ListItem[] = [
   {
-    title: "Check-Ins",
-    href: "/",
-    description: "Complete weekly check-ins to track your progress.",
+    title: "Centralized Dashboard (coming soon)",
+    href: "/coaches/dashboard",
+    description: "Manage all of your athletes in one consolidated location.",
   },
   {
-    title: "Recovery Statistics",
-    href: "/",
-    description: "Gain insights into your recovery with trends and reports.",
-  },
-];
-
-export const HealthItems: ListItem[] = [
-  // {
-  //   title: "Nutrition Log",
-  //   href: "/",
-  //   description: "View and manage your meal plans and nutrition information.",
-  // },
-  // {
-  //   title: "Supplements Tracker",
-  //   href: "/",
-  //   description: "Log your daily supplement intake.",
-  // },
-  {
-    title: "Weight Tracker",
-    href: "/health/logs/weight",
-    description: "Log your daily fasted AM bodyweight.",
+    title: "Athlete Communication (coming soon)",
+    href: "/coaches/communication",
+    description: "Facilitate easy communication with your athletes.",
   },
   {
-    title: "Steps Tracker",
-    href: "/health/logs/steps",
-    description: "Log your daily step count.",
+    title: "Payments (coming soon)",
+    href: "/coaches/payments",
+    description: "Manage payments and billing for your athletes.",
   },
   {
-    title: "Bodyfat % Tracker",
-    href: "/health/logs/bodyfat",
-    description: "Log your daily fasted AM bodyfat %.",
-  },
-  {
-    title: "Water Intake Tracker",
-    href: "/health/logs/water",
-    description: "Log your daily water intake.",
-  },
-  {
-    title: "Daily Calorie Tracker",
-    href: "/health/logs/calories",
-    description: "Log your daily caloric intake.",
-  },
-  // {
-  //   title: "Sleep Tracker",
-  //   href: "/",
-  //   description: "Track and monitor your sleep patterns.",
-  // },
-];
-
-export const AIItems: ListItem[] = [
-  {
-    title: "Physique Pose Training",
-    href: "/ai/physique/poses/train",
-    description: "Train AI to recognize physique poses from photos.",
+    title: "Intelligent Insights (coming soon)",
+    href: "/coaches/insights",
+    description: "Leverage holistic data to make informed coaching decisions.",
   },
 ];

@@ -8,19 +8,13 @@ import {
 } from "lucide-react";
 import {
   NavigationMenu,
-  // NavigationMenuContent,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
-  // NavigationMenuTrigger,
-  // ListItem,
+  NavigationMenuTrigger,
+  ListItem,
 } from "@/components/ui/navigation-menu";
-// import {
-//   TrainingItems,
-//   LibraryItems,
-//   HealthItems,
-//   ReportItems,
-//   AIItems,
-// } from "./NavItems";
+import { AthleteItems, CoachItems } from "./NavItems";
 import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 import Link from "next/link";
@@ -49,11 +43,21 @@ export default function PageWrapper({
                 />
               </Link>
             </NavigationMenuItem>
-            {/* <NavigationMenuItem>
-              <NavigationMenuTrigger>Training</NavigationMenuTrigger>
+            <NavigationMenuItem>
+              <Link href="/about">
+                <Button variant="link" text="About" />
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/ai">
+                <Button variant="link" text="AI" />
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Athletes</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  {TrainingItems.map((component) => (
+                  {AthleteItems.map((component) => (
                     <ListItem
                       key={component.title}
                       title={component.title}
@@ -66,10 +70,10 @@ export default function PageWrapper({
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Library</NavigationMenuTrigger>
+              <NavigationMenuTrigger>Coaches</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {LibraryItems.map((component) => (
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  {CoachItems.map((component) => (
                     <ListItem
                       key={component.title}
                       title={component.title}
@@ -82,53 +86,10 @@ export default function PageWrapper({
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Health</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {HealthItems.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
+              <Link href="/contact">
+                <Button variant="link" text="Contact" />
+              </Link>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>AI</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {AIItems.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Reports</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                  {ReportItems.map((component) => (
-                    <ListItem
-                      key={component.title}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem> */}
           </div>
           <div className="flex items-center gap-2">
             <NavigationMenuItem>
