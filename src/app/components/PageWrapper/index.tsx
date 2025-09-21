@@ -391,7 +391,7 @@ export default function PageWrapper({
               <FolderCode className="h-5 w-5" />
             </a>
           </span>
-          <span className="order-1 sm:order-1">
+          <span className="order-1 sm:order-1 pt-1 sm:pt-0">
             Designed and developed by John Gaynor.
           </span>
         </div>
