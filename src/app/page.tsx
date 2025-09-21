@@ -11,7 +11,7 @@ const Main = () => {
   const themeVariant = currentTheme === "light" ? "light" : "dark";
 
   return (
-    <div className="flex h-screen flex-col items-center">
+    <div className="flex flex-col items-center">
       {/* Mobile/Tablet - Stacked image (below md) */}
       <div className="mt-20 w-[90%] max-w-[800px] relative aspect-[800/1100] md:hidden">
         <Image
