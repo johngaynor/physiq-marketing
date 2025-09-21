@@ -1,5 +1,11 @@
 "use client";
-import { Github, Linkedin, FolderCode } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  FolderCode,
+  ClipboardList,
+  SquareUser,
+} from "lucide-react";
 // import { Button as ShadcnButton } from "@/components/ui";
 import {
   NavigationMenu,
@@ -127,20 +133,16 @@ export default function PageWrapper({
               </NavigationMenuContent>
             </NavigationMenuItem>
           </div>
-          <div className=" flex items-center">
-            <NavigationMenuItem className="mr-5">
+          <div className="flex items-center gap-2">
+            <NavigationMenuItem>
               <Button
                 variant="outline"
+                size="icon"
                 onClick={() =>
                   setTheme((theme || "dark") === "light" ? "dark" : "light")
                 }
-              >
-                {(theme || "dark") === "light" ? (
-                  <Moon size={36} />
-                ) : (
-                  <Sun size={36} />
-                )}
-              </Button>
+                icon={theme === "light" ? Moon : Sun}
+              />
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Button
@@ -149,14 +151,14 @@ export default function PageWrapper({
                   window.open("https://coach.physiq.app", "_blank")
                 }
                 text="Coaches"
-                icon={Github}
+                icon={ClipboardList}
               />
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Button
                 onClick={() => window.open("https://my.physiq.app", "_blank")}
-                text="physiq"
-                variant="outline"
+                text="Athletes"
+                icon={SquareUser}
               />
             </NavigationMenuItem>
           </div>
