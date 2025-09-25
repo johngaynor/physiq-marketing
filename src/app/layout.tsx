@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: [{ url: "/icons/icon-filled-dark-180x180.png", sizes: "180x180" }],
   },
 };
 
